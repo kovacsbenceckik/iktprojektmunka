@@ -9,8 +9,37 @@
     <title>Gripen E</title>
 </head>
 <body>
-    <h1>Gripen E Harci Repülőgép</h1>
-    <nav><a href=""></a></nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#home">Gripen E Harci Repülőgép</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Főoldal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sajatossag">Sajátosságok</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fegyverzet">Fegyverzet</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#tovabbi_lehetosegek" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  További lehetőségek
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <h2 id="sajatossag">Sajátosságok</h2>
     <p></p>
     <p></p>
@@ -19,10 +48,10 @@
     <p></p>
     <p></p>
 
-    <h2 id="tipusok">Típusai, és Magyarország milyeneket használ</h2>
+    <h2 id="tipusok">Típusai, és Magyarország milyeneket használ (kecskeméti állomány)</h2>
     <div class="container-fluid">
-        <div class="row col-sm-2 col-md-4 col-lg-8 col-xl-12">
-            <table>
+        <div>
+            <table id="table">
                 <tr>
                     <th>Típus</th>
                     <th>Magyarország használja-e?</th>
@@ -36,18 +65,74 @@
                     <td class="text-danger">nem</td>
                 </tr>
                 <tr>
-                    <td>JAS 39C/D (együléses)</td>
+                    <td>JAS 39C 12db (együléses)</td>
                     <td class="text-success">igen</td>
                 </tr>
                 <tr>
-                    <td>JAS 39F (kétüléses)</td>
+                    <td>JAS 39D 2db (kétüléses)</td>
                     <td class="text-success">igen</td>
+                </tr>
+                <tr>
+                    <td>JAS 39F (együléses)</td>
+                    <td class="text-danger">nem</td>
+                </tr>
+                <tr>
+                    <td>JAS 39E(együléses)</td>
+                    <td class="text-danger">nem</td>
                 </tr>
             </table>
         </div>
     </div>
+    <button onclick="show_hide()" id="mutatelrejtgomb" class="button">Mutat/Elrejt</button>
 
-    <img class="img img-fluid rounded float-end" src="gripen_e.jpg" alt="Gripen E Harci Repülőgép" width="500" height="300">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img id="kepek" src="gripen_e.jpg" class="d-block w-100 rounded" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="gripen2.jpg" class="d-block w-100 rounded" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="gripen-meteor-irist.jpg" class="d-block w-100 rounded" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Gripen-E-2-scaled.jpg" class="d-block w-100 rounded" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-</body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+      <script>
+        var mutat
+function show_hide()
+{
+    if(mutat==1)
+    {
+        document.getElementById("table").style.display="block";
+        return mutat=0;
+    }
+    else{
+        document.getElementById("table").style.display="none";
+        return mutat=1;
+    }
+}
+const bg = document.getElementById()
+      </script>
+    </body>
 </html>
