@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+    transition: all 1s;
 }
 
 body {
@@ -9,11 +11,12 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
-    background-image: url(gripen_snowy.png);
+    /* background-image: url(gripen_snowy.png);
     background-size: 1920px;
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+*/
 }
 
 .container {
@@ -69,6 +72,7 @@ header {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+    width: max-content;
 }
 
 #mutatelrejtgomb {
@@ -87,5 +91,19 @@ h2{
 }
 
 nav {
-    position: fixed;
+    position: sticky;
+}
+
+p {
+    font-weight: bold;
+}
+
+pre {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 110%;
+}
+
+#carouselExampleIndicators{
+    width: 1250px;
 }
