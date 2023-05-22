@@ -11,12 +11,8 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
-    /* background-image: url(gripen_snowy.png);
-    background-size: 1920px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-*/
+
+
 }
 
 .container {
@@ -106,4 +102,19 @@ pre {
 
 #carouselExampleIndicators{
     width: 1250px;
+}
+
+#gorgohatter{
+    background-image: url(images/hatterkepremelkjukfinal.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100%;
+}
+
+#sajatossag {
+    padding: 50px;
 }
