@@ -29,7 +29,7 @@ header {
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
+
 }
 
 h1 {
@@ -80,36 +80,8 @@ h2{
     font-weight: bolder;
 }
 
-nav {
-    position: sticky;
-}
-
 p {
     font-weight: bold;
-    padding: 30px;
-}
-
-pre {
-    font-family: sans-serif;
-    font-weight: bolder;
-    font-size: 110%;
-}
-
-table {
-    width: 20px;
-    padding: 2px;
-    display: block;
-}
-table, tr, td, th {
-    text-align: center;
-    border: 1px solid lightblue;
-    border-collapse: collapse;
-    background-color: white;
-    
-}
-
-#carouselExampleIndicators{
-    width: 1250px;
 }
 
 #gorgohatter{
@@ -123,23 +95,13 @@ table, tr, td, th {
     background-size: 100%;
 }
 
-#sajatossag {
-    padding: 20px;
-}
-
 #valtozatok {
     text-align: justify;
     margin: auto;
     display: block;
     
 }
-#hiresebb {
-    margin-left: 20px;
-}
 
-#tortenete {
-    margin-left: 20px;
-}
 #felsorolas {
     font-weight: bold;
 }
