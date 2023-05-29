@@ -44,22 +44,10 @@ img {
     width: 500px;
     height: auto;
 }
-table {
-    width: 20px;
-    padding: 2px;
-    display: block;
-}
-table, tr, td, th {
-    text-align: center;
-    border: 1px solid lightblue;
-    border-collapse: collapse;
-    background-color: white;
-    
-}
+
 
 #carouselExampleIndicators {
-    width: 1000px;
-    margin: auto;
+
 }
 
 header {
@@ -101,10 +89,6 @@ pre {
     font-size: 110%;
 }
 
-#carouselExampleIndicators{
-    width: 1250px;
-}
-
 #gorgohatter{
     background-image: url(images/hatterkepremelkjukfinal.png);
     background-position: center;
@@ -113,9 +97,9 @@ pre {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-size: 100%;
+    background-size: cover;
 }
 
-#sajatossag {
-    padding: 50px;
+ol {
+    font-weight: bold;
 }
