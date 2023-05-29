@@ -45,11 +45,6 @@ img {
     height: auto;
 }
 
-
-#carouselExampleIndicators {
-
-}
-
 header {
     background-color: black;
     color: white;
@@ -81,6 +76,7 @@ nav {
 
 p {
     font-weight: bold;
+    text-align: justify; 
 }
 
 pre {
