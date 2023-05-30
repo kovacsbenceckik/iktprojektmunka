@@ -59,13 +59,10 @@ img {
     overflow-clip-margin: none;
 }
 
-
 #carouselExampleIndicators {
     width: 1000px;
     margin: auto;
 }
-
-
 
 #mutatelrejtgomb {
     border-radius: 8px;
@@ -76,7 +73,8 @@ img {
 #mutatelrejtgomb:hover {
     background-color: #4CAF50;
     color: white;
-    }
+}
+
 h2{
     font-size: 200%;
     font-weight: bolder;
@@ -95,7 +93,6 @@ p {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-size: 100%;
 }
 
 #valtozatok {
@@ -109,3 +106,6 @@ p {
     font-weight: bold;
 }
 
+nav {
+    font-weight: none;
+}
